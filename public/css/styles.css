@@ -1,0 +1,419 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+/*----HEADER----*/
+
+
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo{
+    width: 50%;
+    padding: 15px;
+}
+
+header nav{
+    font-size: 12px;
+    display: none;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    padding: 0px;
+   text-align: center;
+   text-overflow: clip;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border-radius: 5px;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;   
+}
+header .form .submit{
+    background-color: #FFF;
+    color: #666;
+    border-radius: 0 5px 5px 0 ;
+}
+
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.compra-texto {
+    margin: auto;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+/*---- MAIN------ */
+
+.price{
+    font-size: 18px;
+}
+
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: block;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: transform 0.5s;
+}
+
+article:hover  i {
+    transform: rotate(-90deg);
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article .main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+main section article .description{
+    display: block;
+    visibility: hidden;
+}
+
+article:hover .description {
+    visibility: visible;
+}
+
+main section article{
+    box-shadow: 0px 0px 10px rgb(100 100 100 / 0);
+}
+
+article:hover {
+    box-shadow: 0px 0px 10px rgb(100 100 100 / 1);
+}
+
+/*----FOOTER----*/
+
+footer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-cosas{
+   
+    display:flex ;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+footer div i {
+    color: #666;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer div i:hover {
+    color: #1259c3;;
+}
+
+footer div {
+    margin: auto;
+    padding: 20px;
+}
+
+
+/*----FORMULARIO----*/
+
+
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #FFF;
+    padding: 15px;
+  }
+  
+  
+  .flex-outer,
+  .flex-inner {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;  
+  }
+  
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .flex-outer li label,
+  .flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+
+  }
+  
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+  
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 220px;
+  }
+  
+  .flex-outer li p {
+    margin: 0;
+  }
+  
+  .flex-outer li button {
+    margin: auto;
+    padding: 5px;
+    background:#0044AA;
+    border:none;
+    color: #f2f2f2;
+    border-radius: 2px;
+  }
+
+  .flex-outer li .login-bottom {
+    background: #666;
+  }
+
+   li:hover .login-bottom {
+    background: #0022AA;
+  }
+  
+  .flex-inner li {
+    width: 200px;
+  }
+  
+input:valid, textarea:valid {
+    background-color: #fff;
+    border: 1px solid green;
+}
+
+
+
+.flex-outer li label {
+    margin: 0 auto;
+text-align: center;
+}
+
+
+
+
+/*----MEDIASQ----*/
+
+@media (min-width: 550px){
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .main-nav ul {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-left: 20px;
+        
+    }
+
+    .main-nav li {
+        margin: 0 5px;
+    }
+
+    .form {
+        justify-content: center;
+    }
+    
+    .compra-texto {
+        width: 300px;
+    }
+
+
+
+
+
+    div.burger-menu i{
+        display: none;
+    }
+    
+    .products {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    } 
+
+    .products article {
+        width: 45%;
+    }
+
+    div.top-header {
+        flex-wrap: nowrap;
+    }
+
+    .check-interes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+}
+    
+
+
+@media (min-width: 769px){
+
+    .products article {
+        width: 20%;
+    }
+    
+    .footer-cosas{
+        display:flex ;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .main-nav li {
+        margin: 0 21px;
+    }
+.top-header .logo {
+    width: 30%;
+}
+
+}
